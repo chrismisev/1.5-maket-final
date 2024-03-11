@@ -1,0 +1,211 @@
+/* ШРИФТ */
+@font-face {
+    font-family: "TT Lakes";
+    src: local("TT Lakes Regular"), url("../fonts/TTLakes-Regular.woff") format("woff"), url("../fonts/TTLakes-Regular.eot") format("embedded-opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "TT Lakes";
+    src: local("TT Lakes Medium"), url("../fonts/TTLakes-Medium.woff") format("woff"), url("../fonts/TTLakes-Medium.eot") format("embedded-opentype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* ОБЩИЕ НАСТРОЙКИ */
+  *,
+  ::before,
+  ::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: #1b1c21;
+    font-family: "TT Lakes", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  
+  body {
+    min-width: 320px;
+    max-width: 1120px;
+    background: #f8f8f8;
+  }
+  
+  button {
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  /* Заголовок */
+  .section_brands__title {
+    display: block;
+    padding: 16px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    background: linear-gradient(270.00deg, #f8f8f8, #ffffff 98.614%);
+    border-top: 2px solid #d9fff5;
+  }
+  
+  .section_brands__title-heading {
+    color: #7e7e82;
+  }
+  
+  /* Навигация */
+  .swiper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-wrapper {
+    padding: 0 16px 0 16px;
+    box-sizing: border-box;
+  }
+  
+  .swiper-slide {
+    margin: 0 16px 0 0;
+    flex-shrink: 0;
+    min-width: 240px;
+    max-width: 240px;
+    height: 72px;
+  }
+  
+  .section_brands__main-content {
+    padding: 15px 15px 15px 15px;
+    max-width: 100%;
+    height: 50%;
+    border: solid 1px #eaeaea;
+    border-radius: 6px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .section_brands__main-content_button {
+    height: 40px;
+  }
+
+  .section_brands__main-content_button_button-all{
+    display: none;
+  }
+
+  
+  /* Пагинация свайпера */
+  .swiper-pagination {
+    position: static;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: #b5b6bc;
+    height: 12px;
+    width: 12px;
+  }
+  
+  /* АНИМАЦИЯ КНОПОК */
+  .section_brands__main-content_button:hover,
+  .section_brands__main-content_button:focus {
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+  
+  /* При расширении 768px+ */
+
+  @media (min-width: 768px) {
+    .section_brands__title {
+      padding-left: 24px;
+    }
+  
+    .slider-1 .swiper-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      row-gap: 12px;
+      column-gap: 24px;
+    }
+  
+    .swiper {
+      height: 164px;
+      overflow: hidden;
+    }
+  
+    .brands__swiper--hidden {
+      height: 250px;
+    }
+  
+    .swiper-wrapper {
+      padding-left: 24px;
+    }
+  
+    .swiper-slide {
+      min-width: 224px;
+      max-width: 224px;
+      margin: 0;
+    }
+  
+    .swiper-pagination {
+      display: none;
+    }
+  
+    .section_brands__main-content_button_button-all {
+      display: flex;
+      gap: 9px;
+      margin: 10px 0 0 24px;
+    }
+  
+    .button-all_text {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  
+    .button-all_text:hover,
+    .button-all_text:focus {
+      opacity: 0.5;
+    }
+  
+    /* Анимация при нажатии */
+    
+   
+
+   .brands-button__arrows--hide {
+
+      transform: rotate(180deg);
+      transition-duration: 0.2s;
+    }
+  }
+  
+  /* При расширении 1120px+ */
+
+  @media (min-width: 1120px) {
+    .section_brands__title {
+      padding-left: 32px;
+    }
+
+    .swiper-slide {
+        min-width: 240px;
+        max-width: 240px;
+        }
+        
+  
+    .slider-1 .swiper-wrapper {
+        column-gap: 32px;
+        row-gap: 16px;
+        width: 100%;
+        padding-left: 32px;
+        height: 165px;
+        }
+
+      
+}
